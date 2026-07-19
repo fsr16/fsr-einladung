@@ -13,7 +13,7 @@
 ) = {
   set document(title: "Einladung zur Sitzung des FSR")
   set page(paper: "a4", margin: 2.5cm)
-  set text(font: "Roboto", size: 12pt, lang: "de")
+  set text(font: ("Liberation Sans", "Arial", "Helvetica",), fallback: true, size: 12pt, lang: "de")
   set par(justify: false)
 
   align(center, image(logo, width: 100%))
