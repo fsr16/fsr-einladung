@@ -3,13 +3,15 @@
 #let fsr-einladung(
   sitzungsdatum: none,
   zeit: "16:00",
-  raum: "",
+  raum: none,
   autor: "",
   sitzungstyp: "ordentlichen", // "ordentlichen" oder "außerordentlichen"
   logo: "fsr-logo.png",
   email: "fsr16@uni-kassel.de",
   tops: (),
   einleitungstext: none,
+  online-link: "https://discord.com",
+  online-text: "online auf Discord"
 ) = {
   set document(title: "Einladung zur Sitzung des FSR")
   set page(paper: "a4", margin: 2.5cm)
@@ -40,7 +42,7 @@
     [
       Hiermit laden wir Sie herzlich zur nächsten #sitzungstyp Sitzung des FSR ein.
       Die Sitzung wird am *#sitzungsdatum.display("[day].[month].[year]")*, um
-      *#zeit Uhr* in *Raum #raum* stattfinden.
+      *#zeit Uhr* #if raum != none ["in *Raum #raum*"] else [#link(online-link)[#online-text]] stattfinden.
     ]
   }
   v(1em)
