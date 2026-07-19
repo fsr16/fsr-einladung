@@ -25,7 +25,10 @@ Alle Einstellungsmöglichkeiten, abgesehen von Raum, Sitzungsdatum und Autor sin
 )
 ```
 
-Der standardmäßige Einleitungstext kann ebenfalls überschrieben werdem, indem zusätzlich `einleitungstext` gesetzt wird.
+Sollte kein Raum angegeben werden, wird die Sitzung zu einer Online-Sitzung. Dabei wird "in Raum XXXX" durch "online auf Discord" ersetzt.
+Dieser Text kann mit `online-text` überschrieben werden. Mit `online-link` kann außerdem ein Hyperlink gesetzt werden, der auf den Ort der Sitzung weiterleitet.
+
+Der standardmäßige Einleitungstext kann auch vollständig überschrieben werdem, indem zusätzlich `einleitungstext` gesetzt wird.
 
 ```typst
 #import "template.typ": fsr-einladung
