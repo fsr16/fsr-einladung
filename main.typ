@@ -10,6 +10,7 @@
     "Feststellung der Beschlussfähigkeit",
     "Genehmigung der Tagesordnung",
     "Verabschiedung des Protokolls vom XX.XX.XXXX",
+    "Berichte aus Ausschüssen und AGs",
     "Verschiedenes",
   ),
 )
