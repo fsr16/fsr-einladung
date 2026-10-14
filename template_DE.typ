@@ -42,7 +42,7 @@
     [
       Hiermit laden wir Sie herzlich zur nächsten #sitzungstyp Sitzung des FSR ein.
       Die Sitzung wird am *#sitzungsdatum.display("[day].[month].[year]")*, um
-      *#zeit Uhr* #if raum != none ["in *Raum #raum*"] else [#link(online-link)[#online-text]] stattfinden.
+      *#zeit Uhr* #if raum != none [in *Raum #raum*] else [#link(online-link)[#online-text]] stattfinden.
     ]
   }
   v(1em)
