@@ -8,21 +8,28 @@ Für die Erstellung der Einladung muss lediglich die Datei [main.typ](./main.typ
 Alle Einstellungsmöglichkeiten, abgesehen von Raum, Sitzungsdatum und Autor sind dabei optional und mit Standardwerten versehen.
 
 ```typst
-#import "template.typ": fsr-einladung
+#import "template_DE.typ": fsr-einladung
+#import "template_EN.typ": fsr-invitation
 
-#fsr-einladung(
-  sitzungsdatum: datetime(year: 1970, month: 1, day: 1),
-  zeit: "16:00",
-  raum: "0407 / 0409",
-  autor: "Maxi Muster",
-  sitzungstyp: "ordentlichen", // "ordentlichen" oder "außerordentlichen"
-  tops: (
-    "Feststellung der Beschlussfähigkeit",
-    "Genehmigung der Tagesordnung",
-    "Verabschiedung des Protokolls vom XX.XX.XXXX",
-    "Verschiedenes",
-  ),
+#let date = datetime(year: 1970, month: 1, day: 1)
+#let time = "16:00"
+#let room = "0407 / 0409"
+#let author = "Maxi Muster"
+#let type_DE = "ordentlichen"   // "ordentlichen" oder "außerordentlichen"
+#let type_EN = "regular"        // "regular" or "extra-ordinary"
+#let tops_DE = (
+  "Feststellung der Beschlussfähigkeit",
+  "Genehmigung der Tagesordnung",
+  "Verabschiedung des Protokolls vom XX.XX.XXXX",
+  "Berichte aus Ausschüssen und AGs",
 )
+#let tops_EN = (
+  "Confirmation of a quorum",
+  "Approval of the agenda",
+  "Approval of the minutes of XX.XX.XXXX",
+  "Reports from committees and working groups",
+)
+...
 ```
 
 Sollte kein Raum angegeben werden, wird die Sitzung zu einer Online-Sitzung. Dabei wird "in Raum XXXX" durch "online auf Discord" ersetzt.

@@ -4,9 +4,9 @@
 #let date = datetime(year: 1970, month: 1, day: 1)
 #let time = "16:00"
 #let room = "0407 / 0409"
-#let author = "Baldi"
-#let type_DE = "ordentlichen"
-#let type_EN = "regular"
+#let author = "Maxi Muster"
+#let type_DE = "ordentlichen"   // "ordentlichen" oder "außerordentlichen"
+#let type_EN = "regular"        // "regular" or "extra-ordinary"
 #let tops_DE = (
   "Feststellung der Beschlussfähigkeit",
   "Genehmigung der Tagesordnung",
